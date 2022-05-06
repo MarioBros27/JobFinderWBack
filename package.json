@@ -1,0 +1,20 @@
+{
+  "name": "rori",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "npm install  && cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-sslify": "^1.2.0"
+  },
+  "engines": {
+    "node": "14.16.1"
+  }
+}
