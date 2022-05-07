@@ -168,7 +168,7 @@ export default function MyInfo() {
                     </Grid>
                     <Grid item container xs={12} spacing={2}>
                         {skills.map((element, index) => (
-                            <Grid item>
+                            <Grid item key={index}>
                                 <Chip style={{ margin: 2 }} key={index} icon={<LocalOfferIcon />} label={element.skill} size="small" />
                             </Grid>
                         ))}

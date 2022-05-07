@@ -8,6 +8,9 @@ import Job from './routes/job'
 import Home from './routes/home'
 import Error from './routes/error'
 import Profile from './routes/profile'
+import Login from './routes/login'
+import Faq from './routes/faq'
+import Us from './routes/us'
 import {
   BrowserRouter,
   Routes,
@@ -25,7 +28,10 @@ root.render(
           <Route path="/jobs/:jobId" element={<Job />} />
           <Route path="profile" element={<Profile/>} />
           <Route path="home" element={<Home />} />
+          <Route path="us" element={<Us />} />
+          {/* <Route path="faq" element={<Faq />} /> */}
         </Route>
+        {/* <Route path="/login" element= {<Login/>}/> */}
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

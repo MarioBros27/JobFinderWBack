@@ -4,6 +4,8 @@ import IconButton from '@mui/material/IconButton';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import Button from '@mui/material/Button';
 import React from "react";
+import StarIcon from '@mui/icons-material/Star';
+
 const jobso = [
     {
         id: 1,
@@ -69,6 +71,20 @@ function Jobs() {
                                                 Grupo Bimbo
                                             </Typography>
                                         </Grid>
+                                        <Grid item container xs={12}>
+                                        <Grid item>
+                                            <StarIcon style={{ color: '#F6BE00' }} />
+                                        </Grid>
+                                        <Grid item>
+                                            <StarIcon style={{ color: '#F6BE00' }} />
+                                        </Grid><Grid item>
+                                            <StarIcon style={{ color: '#F6BE00' }} />
+                                        </Grid><Grid item>
+                                            <StarIcon style={{ color: '#F6BE00' }} />
+                                        </Grid><Grid item>
+                                            <StarIcon style={{ color: '#F6BE00' }} />
+                                        </Grid>
+                                    </Grid>
                                         <Grid item xs={12} align="left">
                                             <Typography variant="h8" component="div">
                                                 Chihuahua, Chihuahua, México

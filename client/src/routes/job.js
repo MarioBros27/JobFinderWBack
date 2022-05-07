@@ -1,25 +1,46 @@
 
 
 import { Routes, Route, useParams } from "react-router-dom";
-import { Grid, Typography, Button, List, ListItem } from '@mui/material';
-
+import { Grid, Typography, Button, } from '@mui/material';
+import StarIcon from '@mui/icons-material/Star';
 export default function Job() {
     let { jobId } = useParams();
     return (
-        <Grid container sx={{ marginTop: 2 }}>
+        <Grid container sx={{ marginTop: 2, marginBottom: 20 }}>
             <Grid item container xs={1}></Grid>
             <Grid item container xs={10} spacing={2}>
                 <Grid item container direction="row" spacing={1} xs={12} sx={{ borderBottomStyle: "solid" }}>
                     <Grid item container direction="column" xs={6} sx={{ borderRightStyle: "solid" }}>
-                        <Grid item>
-                            <Typography variant="h6">
-                                Grupo Bimbo
-                            </Typography>
-                        </Grid>
-                        <Grid item>
-                            <Typography variant="h7">
-                                Chihuahua, Chihuahua, México
-                            </Typography>
+                        <Grid item container direction="row">
+                            <Grid item container direction="row" spacing={1} xs={12}>
+                                <Grid item xs={8}>
+                                    <Typography variant="h6">
+                                        Grupo Bimbo
+                                    </Typography>
+                                </Grid>
+                                <Grid item container xs={12}>
+                                    <Grid item>
+                                        <StarIcon style={{ color: '#F6BE00' }} />
+                                    </Grid>
+                                    <Grid item>
+                                        <StarIcon style={{ color: '#F6BE00' }} />
+                                    </Grid><Grid item>
+                                        <StarIcon style={{ color: '#F6BE00' }} />
+                                    </Grid><Grid item>
+                                        <StarIcon style={{ color: '#F6BE00' }} />
+                                    </Grid><Grid item>
+                                        <StarIcon style={{ color: '#F6BE00' }} />
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid item container xs={12}>
+                                <Grid item>
+                                    <Typography variant="h7">
+                                        Chihuahua, Chihuahua, México
+                                    </Typography>
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                     <Grid item container xs={6}>

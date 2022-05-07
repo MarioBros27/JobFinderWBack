@@ -38,7 +38,7 @@ function App() {
           <Link to="/" style={{ color: "#fff" }}><Button color="inherit"><u>Menú</u></Button></Link>
           <Link to="/jobs" style={{ color: "#fff" }}><Button color="inherit"><u>Trabajos</u></Button></Link>
           <Link to="/profile" style={{ color: "#fff" }}><Button color="inherit"><u>Perfil</u></Button></Link>
-          <Button color="inherit"><u>Preguntas Frecuentes</u></Button>
+          <Link to="/us" style={{ color: "#fff" }}><Button color="inherit"><u>Nosotros</u></Button></Link>
         </Toolbar>
 
       </AppBar>
@@ -63,6 +63,9 @@ function App() {
               </Grid>
               <Grid item xs={12}>
                 <Typography variant="h8" sx={{ color: "#fff" }}> 555-51-23432</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography variant="h8" sx={{ color: "#fff" }}> contacto@jobfinder.com</Typography>
               </Grid>
             </Grid>
           </Grid>

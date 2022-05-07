@@ -9,7 +9,8 @@ export default function Home() {
             div
             style={{
                 backgroundColor: '#020811',
-                height: '100%',
+                height: '100hv',
+                minHeight: '100hv',
                 color: "#fff"
             }}
         >
@@ -31,7 +32,7 @@ export default function Home() {
                 <div
                     style={{ minHeight: "80px", minWidth: "100%" }}
                 />
-                <Button component={Link} to="/jobs" variant="outlined" color="inherit" sx={{ borderRadius: 28, marginLeft: 10 }}>buscar trabajo   -----{'>'}</Button>
+                <Button component={Link} to="/login" variant="outlined" color="inherit" sx={{ borderRadius: 28, marginLeft: 10 }}>buscar trabajo   -----{'>'}</Button>
 
             </div>
             <div
